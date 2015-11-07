@@ -29,12 +29,13 @@ public final class R {
         public static final int icon=0x7f02000f;
         public static final int interest=0x7f020010;
         public static final int justine=0x7f020011;
-        public static final int login_button=0x7f020012;
-        public static final int medecine=0x7f020013;
-        public static final int mute=0x7f020014;
-        public static final int name=0x7f020015;
-        public static final int siringe=0x7f020016;
-        public static final int thermometer=0x7f020017;
+        public static final int les_animaux_autour_du_monde=0x7f020012;
+        public static final int login_button=0x7f020013;
+        public static final int medecine=0x7f020014;
+        public static final int mute=0x7f020015;
+        public static final int name=0x7f020016;
+        public static final int siringe=0x7f020017;
+        public static final int thermometer=0x7f020018;
     }
     public static final class id {
         public static final int MyButton=0x7f05000a;

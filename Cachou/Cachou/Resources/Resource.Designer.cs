@@ -99,22 +99,25 @@ namespace Cachou
 			public const int justine = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int login_button = 2130837522;
+			public const int Les_animaux_autour_du_monde = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int medecine = 2130837523;
+			public const int login_button = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int mute = 2130837524;
+			public const int medecine = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int name = 2130837525;
+			public const int mute = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int siringe = 2130837526;
+			public const int name = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int thermometer = 2130837527;
+			public const int siringe = 2130837527;
+			
+			// aapt resource value: 0x7f020018
+			public const int thermometer = 2130837528;
 			
 			static Drawable()
 			{

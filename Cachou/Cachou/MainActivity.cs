@@ -36,7 +36,24 @@ namespace Cachou
 
         public static void ChangeCachouMood(object sender, SeekBar.ProgressChangedEventArgs e)
         {
-            _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
+            int div = e.Progress/25;
+
+            switch (div)
+            {
+                case 0:
+                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou);
+                    break;
+                case 1:
+                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
+                    break;
+                case 2:
+                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
+                    break;
+                case 3:
+                case 4:
+                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou_triste);
+                    break;
+            }
 
         }
     }
