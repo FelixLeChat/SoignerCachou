@@ -45,13 +45,55 @@ namespace Cachou
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int background = 2130837504;
+			public const int age = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int background = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int login_button = 2130837506;
+			public const int bandaid = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int blood = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int Cachou = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int Cachou_Confu = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int Cachou_happy = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int Cachou_triste = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int home = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int Icon = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int interest = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int login_button = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int medecine = 2130837516;
+			
+			// aapt resource value: 0x7f02000d
+			public const int mute = 2130837517;
+			
+			// aapt resource value: 0x7f02000e
+			public const int name = 2130837518;
+			
+			// aapt resource value: 0x7f02000f
+			public const int siringe = 2130837519;
+			
+			// aapt resource value: 0x7f020010
+			public const int thermometer = 2130837520;
 			
 			static Drawable()
 			{
@@ -66,17 +108,20 @@ namespace Cachou
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050004
+			public const int MyButton = 2131034116;
+			
 			// aapt resource value: 0x7f050003
-			public const int MyButton = 2131034115;
-			
-			// aapt resource value: 0x7f050002
-			public const int editText1 = 2131034114;
-			
-			// aapt resource value: 0x7f050001
-			public const int editText2 = 2131034113;
+			public const int editText1 = 2131034115;
 			
 			// aapt resource value: 0x7f050000
-			public const int textView1 = 2131034112;
+			public const int editText2 = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int textView1 = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int textView2 = 2131034113;
 			
 			static Id()
 			{
@@ -92,7 +137,10 @@ namespace Cachou
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int CachouMain = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{
