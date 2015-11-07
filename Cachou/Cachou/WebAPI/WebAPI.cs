@@ -14,12 +14,17 @@ namespace Cachou.WebAPI
         }
         public static string Get()
         {
-            return CallApi(Method.GET, "http://cachouserver.mybluemix.net/test");
+            return CallApi(Method.GET, "http://cachouserver.mybluemix.net/api/test");
         }
 
         public static string Post()
         {
-            return CallApi(Method.POST, "http://cachouserver.mybluemix.net/test");
+            return CallApi(Method.POST, "http://cachouserver.mybluemix.net/api/test");
+        }
+
+        public static void SendChildAction()
+        {
+            CallApi(Method.POST, "http://cachouserver.mybluemix.net/api/test");
         }
 
         private static string CallApi(Method method, string url, string param = null)
