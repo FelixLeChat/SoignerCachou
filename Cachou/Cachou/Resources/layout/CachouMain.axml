@@ -7,77 +7,84 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:id="@+id/linearLayout1"
-    tools:actionBarNavMode="list">
+    tools:actionBarNavMode="list"
+    android:background="#EEEEEE">
     <Button
-        android:text="Button"
+        android:text=""
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/Home"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp" />
     <Button
-        android:text="Button"
+        android:text=""
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/Sound"
         android:layout_marginLeft="178dp"
         android:layout_marginTop="-130dp" />
     <Button
-        android:text="Button"
+        android:text=""
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/Pause"
         android:layout_marginLeft="653dp"
         android:layout_marginTop="-130dp" />
     <Button
-        android:text="Button"
+        android:text=""
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/Pause"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="115dp" />
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/blood" />
     <Button
-        android:text="Button"
+        android:text=""
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/Pause"
-        android:layout_marginLeft="653dp"
-        android:layout_marginTop="-130dp" />
+        android:layout_marginLeft="590dp"
+        android:layout_marginTop="-130dp"
+        android:background="@drawable/siringe" />
     <ImageView
         android:src="@drawable/Cachou_happy"
-        android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:layout_width="525dp"
+        android:layout_height="850dp"
         android:id="@+id/imageView1"
-        android:layout_marginLeft="225dp"
-        android:layout_marginTop="-100dp" />
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="-300dp" />
     <Button
-        android:text="Button"
+        android:text=""
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/Pause"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="-350dp" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-500dp"
+        android:background="@drawable/bandaid" />
     <Button
-        android:text="Button"
+        android:text=""
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/Pause"
-        android:layout_marginLeft="653dp"
-        android:layout_marginTop="-130dp" />
+        android:layout_marginLeft="640dp"
+        android:layout_marginTop="-130dp"
+        android:background="@drawable/medecine" />
     <Button
-        android:text="Button"
+        android:text=""
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/Pause"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp" />
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/thermometer" />
     <Button
-        android:text="Button"
+        android:text=""
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/Pause"
-        android:layout_marginLeft="653dp"
-        android:layout_marginTop="-130dp" />
+        android:layout_marginLeft="610dp"
+        android:layout_marginTop="-130dp"
+        android:background="@drawable/heart" />
     <TextView
         android:text="Cachou"
         android:layout_width="126dp"
