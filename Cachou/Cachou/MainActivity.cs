@@ -1,12 +1,15 @@
 ﻿using Android.App;
+using Android.Content.PM;
 using Android.Widget;
 using Android.OS;
 
 namespace Cachou
 {
-    [Activity(MainLauncher = true)]
+    [Activity(MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : Activity
     {
+        int count = 1;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

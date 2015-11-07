@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Cachou.Cachou" android:versionCode="1" android:versionName="1.0">
   <uses-sdk android:minSdkVersion="11" />
   <application android:label="Cachou" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
-    <activity android:name="md5eeff201f80def86f2b2d6f752f971207.MainActivity">
+    <activity android:screenOrientation="portrait" android:name="md5eeff201f80def86f2b2d6f752f971207.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
