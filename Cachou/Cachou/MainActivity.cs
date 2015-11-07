@@ -1,10 +1,12 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using System.Collections.Generic;
 
 namespace Cachou
 {
@@ -12,6 +14,7 @@ namespace Cachou
     public class MainActivity : Activity
     {
         private static ImageView _cachouImageView;
+        private List<ImageView> tools;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -21,6 +24,46 @@ namespace Cachou
             SetContentView(Resource.Layout.Main);
             Button button = FindViewById<Button>(Resource.Id.MyButton);
             button.Click += delegate { ChangeToMainView(); };
+
+            tools = new List<ImageView>();
+
+            //Adding the different tools to a list
+            tools.Add(FindViewById<ImageView>(Resource.Id.outil1));
+            tools.Add(FindViewById<ImageView>(Resource.Id.outil2));
+            tools.Add(FindViewById<ImageView>(Resource.Id.outil3));
+            tools.Add(FindViewById<ImageView>(Resource.Id.outil4));
+            tools.Add(FindViewById<ImageView>(Resource.Id.outil5));
+            tools.Add(FindViewById<ImageView>(Resource.Id.outil6));
+
+            foreach (ImageView i in tools)
+            {
+                i.SetOnLongClickListener(new ToolTouchListener());
+
+                i.Drag += (s, args) =>
+                {
+                    switch (args.Event.Action)
+                    {
+                        case DragAction.Started:
+                            args.Handled = true;
+                            break;
+                        case DragAction.Entered:
+                            args.Handled = true;
+                            break;
+                        case DragAction.Exited:
+                            args.Handled = true;
+                            break;
+                        case DragAction.Drop:
+                            args.Handled = true;
+                            toolDroppedOnCachou();
+                            break;
+                        case DragAction.Ended:
+                            args.Handled = true;
+                            break;
+                        default:
+                            break;
+                    }
+                };
+            }
         }
 
         private void ChangeToMainView()
@@ -66,6 +109,43 @@ namespace Cachou
                 base.OnDrawShadow(canvas);
                 shadow.Draw(canvas);
             }
+        }
+
+        private class ToolTouchListener : Activity, View.IOnLongClickListener
+        {
+            public bool OnLongClick(View v)
+            {
+                View.DragShadowBuilder shadowBuilder = new ToolShadowBuilder(v);
+
+                ClipData clipData = ClipData.NewPlainText(v.Tag.ToString(), "Outil");
+
+                v.StartDrag(clipData, shadowBuilder, v, 0);
+
+                return true;
+            }
+
+            public bool OnLongClick(View v, MotionEvent e)
+            {
+                if (e.Action == MotionEventActions.Down)
+                {
+                    View.DragShadowBuilder shadowBuilder = new ToolShadowBuilder(v);
+
+                    ClipData clipData = ClipData.NewPlainText(v.Tag.ToString(), "Outil");
+
+                    v.StartDrag(clipData, shadowBuilder, v, 0);
+
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        private void toolDroppedOnCachou()
+        {
+            _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
         }
 
         public static void ChangeCachouMood(object sender, SeekBar.ProgressChangedEventArgs e)
