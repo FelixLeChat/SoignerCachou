@@ -1,0 +1,4 @@
+Cachou.MainActivity, Cachou;md5eeff201f80def86f2b2d6f752f971207.MainActivity
+Cachou.MainActivity, Cachou, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5eeff201f80def86f2b2d6f752f971207.MainActivity
+Cachou.MainActivity;md5eeff201f80def86f2b2d6f752f971207.MainActivity
+cachou.MainActivity;md5eeff201f80def86f2b2d6f752f971207.MainActivity

@@ -1,0 +1,7 @@
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\assemblies\Cachou.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\assemblies\mscorlib.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\assemblies\System.Core.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\assemblies\System.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\assemblies\System.Xml.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\assemblies\System.Xml.Linq.dll

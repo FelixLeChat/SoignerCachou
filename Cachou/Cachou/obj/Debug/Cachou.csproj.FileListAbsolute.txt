@@ -1,0 +1,14 @@
+C:\Users\Félix\Desktop\Ecole\ibm_bluemix\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.csprojResolveAssemblyReference.cache
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.pdb
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.Cachou.apk
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.Cachou-Signed.apk
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.csprojResolveAssemblyReference.cache
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.pdb
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\android\bin\Cachou.Cachou.apk
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\layout\main.xml
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\values\strings.xml
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\icon.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\R.cs.flag
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\uploadflags.txt
