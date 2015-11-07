@@ -44,7 +44,7 @@
         android:layout_marginLeft="653"
         android:layout_marginTop="-130" />
     <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
+        android:src="@android:drawable/Cachou_happy"
         android:layout_width="350"
         android:layout_height="500"
         android:id="@+id/imageView1"
