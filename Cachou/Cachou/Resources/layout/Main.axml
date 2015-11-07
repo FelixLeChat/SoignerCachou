@@ -7,6 +7,7 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="@drawable/background"
+    android:theme="@android:style/Theme.Holo.NoActionBar"
     tools:actionBarNavMode="list">
     <TextView
         android:text=""

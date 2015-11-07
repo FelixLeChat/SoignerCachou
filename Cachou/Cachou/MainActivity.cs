@@ -21,7 +21,12 @@ namespace Cachou
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
-            button.Click += delegate { button.Text = $"{WebAPI.WebAPI.Get()}"; };
+            button.Click += delegate {ChangeToMainView(); };
+        }
+
+        private void ChangeToMainView()
+        {
+            SetContentView(Resource.Layout.CachouMain);
         }
     }
 }
