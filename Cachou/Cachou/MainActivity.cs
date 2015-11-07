@@ -17,26 +17,19 @@ namespace Cachou
         {
             base.OnCreate(bundle);
 
-            // FindViewById<ImageView>(Resource.Id.nom_de_view)
-
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.CachouMain);
-
-            SeekBar seekBar = FindViewById<SeekBar>(Resource.Id.seekBar);
-            seekBar.ProgressChanged += ChangeCachouMood;
-
-            _cachouImageView = FindViewById<ImageView>(Resource.Id.imageViewCachou);
-
-            // Get our button from the layout resource,
-            // and attach an event to it
-            /*Button button = FindViewById<Button>(Resource.Id.MyButton);
-
-            button.Click += delegate {ChangeToMainView(); };*/
+            SetContentView(Resource.Layout.Main);
+            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            button.Click += delegate { ChangeToMainView(); };
         }
 
         private void ChangeToMainView()
         {
             SetContentView(Resource.Layout.CachouMain);
+            SeekBar seekBar = FindViewById<SeekBar>(Resource.Id.seekBar);
+            seekBar.ProgressChanged += ChangeCachouMood;
+
+            _cachouImageView = FindViewById<ImageView>(Resource.Id.imageViewCachou);
         }
 
         private class ToolShadowBuilder : View.DragShadowBuilder

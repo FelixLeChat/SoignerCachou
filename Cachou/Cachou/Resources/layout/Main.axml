@@ -9,6 +9,16 @@
     android:background="@drawable/Les_animaux_autour_du_monde"
     android:theme="@android:style/Theme.Holo.NoActionBar"
     tools:actionBarNavMode="list">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:id="@+id/imageView1"
+        android:layout_marginBottom="-880dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginLeft="150dp"
+        android:background="#EEEEEE"
+        android:alpha="0.6"
+        android:layout_marginTop="250dp" />
     <TextView
         android:text=""
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -83,4 +93,11 @@
         android:layout_marginLeft="180dp"
         android:layout_marginRight="280dp"
         android:layout_marginTop="20dp" />
+    <ImageView
+        android:src="@drawable/ste_justine"
+        android:layout_width="142dp"
+        android:layout_height="224dp"
+        android:id="@+id/imageView2"
+        android:layout_marginLeft="650dp"
+        android:layout_marginTop="50dp" />
 </LinearLayout>

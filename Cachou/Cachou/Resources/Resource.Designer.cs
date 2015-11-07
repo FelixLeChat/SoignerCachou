@@ -117,7 +117,10 @@ namespace Cachou
 			public const int siringe = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int thermometer = 2130837528;
+			public const int ste_justine = 2130837528;
+			
+			// aapt resource value: 0x7f020019
+			public const int thermometer = 2130837529;
 			
 			static Drawable()
 			{
@@ -132,17 +135,20 @@ namespace Cachou
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f05000a
-			public const int MyButton = 2131034122;
+			// aapt resource value: 0x7f05000b
+			public const int MyButton = 2131034123;
 			
 			// aapt resource value: 0x7f050002
 			public const int Pause = 2131034114;
 			
+			// aapt resource value: 0x7f05000a
+			public const int editText1 = 2131034122;
+			
 			// aapt resource value: 0x7f050009
-			public const int editText1 = 2131034121;
+			public const int editText2 = 2131034121;
 			
 			// aapt resource value: 0x7f050008
-			public const int editText2 = 2131034120;
+			public const int imageView1 = 2131034120;
 			
 			// aapt resource value: 0x7f050006
 			public const int imageView2 = 2131034118;

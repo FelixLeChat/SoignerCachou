@@ -8,7 +8,7 @@
     android:minHeight="25px"
     android:id="@+id/linearLayout1"
     tools:actionBarNavMode="list"
-    android:background="#EEEEEE">
+    android:background="#90D4F7">
     <ImageView
         android:layout_width="match_parent"
         android:id="@+id/imageView3"
@@ -74,23 +74,15 @@
     <TextView
         android:text="Cachou"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:id="@+id/textView2"
         android:textSize="70dp"
         android:textColor="#000000"
-        android:layout_marginLeft="200dp"
+        android:layout_marginLeft="280dp"
         android:layout_marginTop="120dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="10.0dp"
         android:textStyle="bold" />
-    <Button
-        android:text=""
-        android:layout_width="100.0dp"
-        android:layout_height="100.0dp"
-        android:id="@+id/Pause"
-        android:layout_marginLeft="470dp"
-        android:layout_marginTop="-170dp"
-        android:background="@drawable/dossier" />
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="30.0dp"
@@ -99,38 +91,13 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginBottom="-30dp"
-        android:layout_marginTop="50dp" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:id="@+id/imageView3"
-        android:background="#E4E4E4"
-        android:layout_height="250.0dp"
-        android:layout_marginBottom="-280dp"
-        android:layout_marginTop="80dp" />
-    <ImageView
-        android:src="@drawable/justine"
-        android:layout_width="128.0dp"
-        android:layout_height="128.0dp"
-        android:id="@+id/imageView2"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp" />
-    <TextView
-        android:text="Justine"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
-        android:id="@+id/textView1"
-        android:textSize="24sp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="-110dp"
-        android:textColor="#000000"
-        android:textStyle="bold" />
-    <TextView
-        android:text="Docteur"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
-        android:id="@+id/textView1"
-        android:textSize="24sp"
-        android:layout_marginLeft="160dp"
-        android:textColor="#000000"
-        android:layout_marginTop="-10dp" />
+        android:layout_marginTop="20dp" />
+    <Button
+        android:text=""
+        android:layout_width="400dp"
+        android:layout_height="235dp"
+        android:id="@+id/button1"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="0.0dp"
+        android:background="@drawable/docteur-justine" />
 </LinearLayout>
