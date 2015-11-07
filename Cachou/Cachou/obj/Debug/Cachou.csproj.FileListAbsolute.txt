@@ -35,3 +35,6 @@ C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cach
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cachou_triste.png
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blood.png
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\name.png
+C:\Users\alex__000\Documents\Visual Studio 2013\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.csprojResolveAssemblyReference.cache
+C:\Users\alex__000\Documents\Visual Studio 2013\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.dll
+C:\Users\alex__000\Documents\Visual Studio 2013\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.pdb
