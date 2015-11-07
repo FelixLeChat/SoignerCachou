@@ -20,7 +20,7 @@ namespace Cachou
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            button.Click += delegate { button.Text = $"{WebAPI.WebAPI.Get()}"; };
         }
     }
 }

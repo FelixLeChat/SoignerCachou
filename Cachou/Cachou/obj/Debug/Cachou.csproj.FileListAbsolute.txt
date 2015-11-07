@@ -12,3 +12,9 @@ C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\values\string
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\icon.png
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\R.cs.flag
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\uploadflags.txt
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.dll.config
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Newtonsoft.Json.xml
