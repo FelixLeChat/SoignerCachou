@@ -63,7 +63,6 @@ namespace Cachou
                     break;
                 case DragAction.Drop:
                     e.Handled = true;
-                    toolDroppedOnCachou();
                     break;
                 case DragAction.Ended:
                     e.Handled = true;
