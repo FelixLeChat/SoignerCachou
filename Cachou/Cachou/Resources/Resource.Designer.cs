@@ -296,6 +296,9 @@ namespace Cachou
 			// aapt resource value: 0x7f040004
 			public const int audio5 = 2130968580;
 			
+			// aapt resource value: 0x7f040005
+			public const int audio6 = 2130968581;
+			
 			static Raw()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

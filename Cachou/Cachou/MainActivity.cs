@@ -41,7 +41,6 @@ namespace Cachou
             // Starting tutorial
             SetContentView(Resource.Layout.CachouMain);
             _seekBar = FindViewById<SeekBar>(Resource.Id.seekBar);
-            handleSeekBarDrag(_seekBar);
 
             _cachouImageView = FindViewById<ImageView>(Resource.Id.imageViewCachou);
 
@@ -64,17 +63,9 @@ namespace Cachou
 
         private void handleSeekBarDrag(SeekBar seekBar)
         {
-            seekBar.Drag += (s, args) =>
+            seekBar.ProgressChanged += (s, args) =>
             {
-                //Si on relache la barre
-                if (args.Event.Action == DragAction.Exited)
-                {
-                    ChangeCachouMood(seekBar, true);
-                }
-                else
-                {
-                    ChangeCachouMood(seekBar);
-                }
+                ChangeCachouMood(seekBar, false);
             };
         }
 
@@ -166,12 +157,13 @@ namespace Cachou
 
         public void HideScroll()
         {
-            _seekBar.Visibility = ViewStates.Invisible;
+            _seekBar.Visibility = ViewStates.Gone;
         }
 
         public void ShowScroll()
         {
             _seekBar.Visibility = ViewStates.Visible;
+            handleSeekBarDrag(_seekBar);
         }
 
         public void AddEventOnDrag()

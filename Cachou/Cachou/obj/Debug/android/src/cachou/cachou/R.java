@@ -88,6 +88,7 @@ public final class R {
         public static final int audio3=0x7f040002;
         public static final int audio4=0x7f040003;
         public static final int audio5=0x7f040004;
+        public static final int audio6=0x7f040005;
     }
     public static final class string {
         public static final int ApplicationName=0x7f050001;

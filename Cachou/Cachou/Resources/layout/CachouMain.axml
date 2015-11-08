@@ -211,7 +211,6 @@
             android:layout_height="500.0dp"
             android:layout_marginLeft="-80dp"
             android:layout_marginTop="190dp"
-            android:id="@+id/to_color"
-            android:background="@drawable/bear" />
+            android:id="@+id/to_color" />
     </LinearLayout>
 </LinearLayout>

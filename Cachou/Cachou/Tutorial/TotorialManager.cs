@@ -123,7 +123,18 @@ namespace Cachou.Tutorial
                         PlayAudio(_mainActivity, Resource.Raw.audio5);
 
                         // Trigger animations
+                        //_mainActivity.Find ViewById<ImageView>(Resource.Id.imageViewCachou).SetImageResource(Resource.Drawable);
                         // trigger real game
+                        _step++;
+                    }
+                    break;
+                case 5:
+                    if (obj is MediaPlayer)
+                    {
+                        PlayAudio(_mainActivity, Resource.Raw.audio6);
+
+                        _mainActivity.ShowScroll();
+                        _step++;
                     }
                     break;
             }
