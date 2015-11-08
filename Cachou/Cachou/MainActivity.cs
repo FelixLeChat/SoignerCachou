@@ -14,7 +14,7 @@ namespace Cachou
     public class MainActivity : Activity
     {
         private static ImageView _cachouImageView;
-        private List<ImageView> tools;
+        private List<ImageView> _tools = new List<ImageView>();
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -24,126 +24,56 @@ namespace Cachou
             SetContentView(Resource.Layout.Main);
             Button button = FindViewById<Button>(Resource.Id.MyButton);
             button.Click += delegate { ChangeToMainView(); };
-
-            tools = new List<ImageView>();
-
-            //Adding the different tools to a list
-            tools.Add(FindViewById<ImageView>(Resource.Id.outil1));
-            tools.Add(FindViewById<ImageView>(Resource.Id.outil2));
-            tools.Add(FindViewById<ImageView>(Resource.Id.outil3));
-            tools.Add(FindViewById<ImageView>(Resource.Id.outil4));
-            tools.Add(FindViewById<ImageView>(Resource.Id.outil5));
-            tools.Add(FindViewById<ImageView>(Resource.Id.outil6));
-
-            foreach (ImageView i in tools)
-            {
-                i.SetOnLongClickListener(new ToolTouchListener());
-
-                i.Drag += (s, args) =>
-                {
-                    switch (args.Event.Action)
-                    {
-                        case DragAction.Started:
-                            args.Handled = true;
-                            break;
-                        case DragAction.Entered:
-                            args.Handled = true;
-                            break;
-                        case DragAction.Exited:
-                            args.Handled = true;
-                            break;
-                        case DragAction.Drop:
-                            args.Handled = true;
-                            toolDroppedOnCachou();
-                            break;
-                        case DragAction.Ended:
-                            args.Handled = true;
-                            break;
-                        default:
-                            break;
-                    }
-                };
-            }
         }
 
         private void ChangeToMainView()
         {
             SetContentView(Resource.Layout.CachouMain);
-            SeekBar seekBar = FindViewById<SeekBar>(Resource.Id.seekBar);
+            var seekBar = FindViewById<SeekBar>(Resource.Id.seekBar);
             seekBar.ProgressChanged += ChangeCachouMood;
 
             _cachouImageView = FindViewById<ImageView>(Resource.Id.imageViewCachou);
+
+            _tools.Add(FindViewById<ImageView>(Resource.Id.outil1));
+            _tools.Add(FindViewById<ImageView>(Resource.Id.outil2));
+            _tools.Add(FindViewById<ImageView>(Resource.Id.outil3));
+            _tools.Add(FindViewById<ImageView>(Resource.Id.outil4));
+            _tools.Add(FindViewById<ImageView>(Resource.Id.outil5));
+            _tools.Add(FindViewById<ImageView>(Resource.Id.outil6));
+
+            foreach (var imageView in _tools)
+            {
+                imageView.Drag += HandleDrag;
+                imageView.SetOnTouchListener(new ToolTouchListener());
+            }
         }
 
-        private class ToolShadowBuilder : View.DragShadowBuilder
+        private static void HandleDrag(object obj, View.DragEventArgs e)
         {
-            private Drawable shadow;
-
-            public ToolShadowBuilder(View v) : base(v)
+            switch (e.Event.Action)
             {
-                // Nous permettons l'utilisation d'une cache pour dessiner
-                // L'ombre de notre icône
-                v.DrawingCacheEnabled = true;
-                Bitmap bm = v.DrawingCache;
-                shadow = new BitmapDrawable(bm);
-
-                // L'ombre devient un genre de gris
-                shadow.SetColorFilter(Color.ParseColor("#4EB1FB"), PorterDuff.Mode.Multiply);
-            }
-
-            public override void OnProvideShadowMetrics(Point size, Point touch)
-            {
-                // Nous prenons les dimensions de notre image
-                int width = View.Width;
-                int height = View.Height;
-                // Nous créons les dimensions de l'ombre
-                shadow.SetBounds(0, 0, width, height);
-                size.Set(width, height);
-
-                touch.Set(width / 2, height / 2);
-            }
-
-            public override void OnDrawShadow(Canvas canvas)
-            {
-                // Nous dessinons l'ombre de l'image
-                base.OnDrawShadow(canvas);
-                shadow.Draw(canvas);
+                case DragAction.Started:
+                    e.Handled = true;
+                    break;
+                case DragAction.Entered:
+                    e.Handled = true;
+                    break;
+                case DragAction.Exited:
+                    e.Handled = true;
+                    break;
+                case DragAction.Drop:
+                    e.Handled = true;
+                    toolDroppedOnCachou();
+                    break;
+                case DragAction.Ended:
+                    e.Handled = true;
+                    break;
+                default:
+                    break;
             }
         }
 
-        private class ToolTouchListener : Activity, View.IOnLongClickListener
-        {
-            public bool OnLongClick(View v)
-            {
-                View.DragShadowBuilder shadowBuilder = new ToolShadowBuilder(v);
-
-                ClipData clipData = ClipData.NewPlainText(v.Tag.ToString(), "Outil");
-
-                v.StartDrag(clipData, shadowBuilder, v, 0);
-
-                return true;
-            }
-
-            public bool OnLongClick(View v, MotionEvent e)
-            {
-                if (e.Action == MotionEventActions.Down)
-                {
-                    View.DragShadowBuilder shadowBuilder = new ToolShadowBuilder(v);
-
-                    ClipData clipData = ClipData.NewPlainText(v.Tag.ToString(), "Outil");
-
-                    v.StartDrag(clipData, shadowBuilder, v, 0);
-
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
-
-        private void toolDroppedOnCachou()
+        private static void toolDroppedOnCachou()
         {
             _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
         }
