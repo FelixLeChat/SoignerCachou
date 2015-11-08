@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Cachou.WebAPI
 {
-    class WebAPI
+    public static class WebAPI
     {
         private enum Method
         {
@@ -22,12 +22,12 @@ namespace Cachou.WebAPI
             return CallApi(Method.POST, "http://cachouserver.mybluemix.net/api/test");
         }
 
-        public static void SendChildAction()
+        public static void SendChildAction(string date, string action)
         {
-            CallApi(Method.POST, "http://cachouserver.mybluemix.net/api/test");
+            CallApi(Method.POST, "http://cachouserver.mybluemix.net/api/db/history", "{\"date\":\"" + date + "\", \"action\":\"" + action + "\"}");
         }
 
-        private static string CallApi(Method method, string url, string param = null)
+        private static string CallApi(Method method, string url, string data = null)
         {
             try
             {
@@ -61,10 +61,10 @@ namespace Cachou.WebAPI
                 {
                     request.Method = "POST";
                     // Create POST data and convert it to a byte array.
-                    string postData = "{ \"message\"=\"Hey There\"}";
+                    string postData = data ?? string.Empty;
                     byte[] byteArray = Encoding.UTF8.GetBytes(postData);
                     // Set the ContentType property of the WebRequest.
-                    request.ContentType = "application/x-www-form-urlencoded";
+                    request.ContentType = "application/JSON";
                     // Set the ContentLength property of the WebRequest.
                     request.ContentLength = byteArray.Length;
 

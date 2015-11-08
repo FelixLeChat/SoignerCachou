@@ -4,11 +4,14 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Threading;
 using Android.Media;
 using Cachou.Tutorial;
+=======
 using System;
 using System.Globalization;
+>>>>>>> cca75eff2666c2a5b23bc8177418d7039e1f4e29
 
 namespace Cachou
 {
@@ -102,25 +105,26 @@ namespace Cachou
             {
                 case 0:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou);
-                    WebmessageSender.postServer("Justine dit que Cachou est normal.");
+                    webMessageSender.postServer("Justine dit que Cachou est normal.");
                     break;
                 case 1:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
-                    WebmessageSender.postServer("Justine dit que Cachou est confu.");
+                    webMessageSender.postServer("Justine dit que Cachou est confu.");
                     break;
                 case 2:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
-                    WebmessageSender.postServer("Justine dit que Cachou est content.");
+                    webMessageSender.postServer("Justine dit que Cachou est content.");
                     break;
                 case 3:
                 case 4:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_triste);
-                    WebmessageSender.postServer("Justine dit que Cachou est triste.");
+                    webMessageSender.postServer("Justine dit que Cachou est triste.");
                     break;
             }
 
         }
 
+<<<<<<< HEAD
         public void HideTools()
         {
             foreach (var imageView in _tools)
@@ -171,6 +175,16 @@ namespace Cachou
             var imageview = FindViewById<ImageView>(Resource.Id.choose_nurse);
             imageview.BringToFront();
             imageview.Visibility = ViewStates.Visible;
+=======
+        static class webMessageSender
+        {
+            public static void postServer(string message)
+            {
+                DateTime localDate = DateTime.Now;
+                string culture = "en-GB";
+                WebAPI.WebAPI.SendChildAction(localDate.ToString(culture), message);
+            } 
+>>>>>>> cca75eff2666c2a5b23bc8177418d7039e1f4e29
         }
     }
 }
