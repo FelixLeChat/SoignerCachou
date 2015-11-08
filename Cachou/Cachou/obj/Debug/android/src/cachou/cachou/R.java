@@ -25,41 +25,44 @@ public final class R {
         public static final int cachou_happy=0x7f02000b;
         public static final int cachou_triste=0x7f02000c;
         public static final int clipboard=0x7f02000d;
-        public static final int croix_rouge=0x7f02000e;
-        public static final int fox=0x7f02000f;
-        public static final int girafe=0x7f020010;
-        public static final int heart=0x7f020011;
-        public static final int home=0x7f020012;
-        public static final int icon=0x7f020013;
-        public static final int interest=0x7f020014;
-        public static final int justine=0x7f020015;
-        public static final int justine_docteur=0x7f020016;
-        public static final int les_animaux_autour_du_monde=0x7f020017;
-        public static final int login_button=0x7f020018;
-        public static final int medecine=0x7f020019;
-        public static final int mute=0x7f02001a;
-        public static final int name=0x7f02001b;
-        public static final int panda=0x7f02001c;
-        public static final int placeholder=0x7f02001d;
-        public static final int siringe=0x7f02001e;
-        public static final int ste_justine=0x7f02001f;
-        public static final int thermometer=0x7f020020;
+        public static final int coloring=0x7f02000e;
+        public static final int croix_rouge=0x7f02000f;
+        public static final int fox=0x7f020010;
+        public static final int girafe=0x7f020011;
+        public static final int heart=0x7f020012;
+        public static final int home=0x7f020013;
+        public static final int icon=0x7f020014;
+        public static final int interest=0x7f020015;
+        public static final int justine=0x7f020016;
+        public static final int justine_docteur=0x7f020017;
+        public static final int les_animaux_autour_du_monde=0x7f020018;
+        public static final int login_button=0x7f020019;
+        public static final int medecine=0x7f02001a;
+        public static final int mute=0x7f02001b;
+        public static final int name=0x7f02001c;
+        public static final int panda=0x7f02001d;
+        public static final int placeholder=0x7f02001e;
+        public static final int siringe=0x7f02001f;
+        public static final int ste_justine=0x7f020020;
+        public static final int thermometer=0x7f020021;
     }
     public static final class id {
-        public static final int MyButton=0x7f060019;
+        public static final int MyButton=0x7f06001c;
         public static final int bear1=0x7f06000c;
         public static final int bear2=0x7f060010;
         public static final int bear3=0x7f060014;
         public static final int button1=0x7f06000a;
         public static final int choose_nurse=0x7f06000b;
-        public static final int editText1=0x7f060018;
-        public static final int editText2=0x7f060016;
+        public static final int coloring=0x7f060016;
+        public static final int coloring_nurse=0x7f060015;
+        public static final int editText1=0x7f06001b;
+        public static final int editText2=0x7f060019;
         public static final int fox1=0x7f06000d;
         public static final int fox2=0x7f060011;
         public static final int girafe1=0x7f06000e;
         public static final int girafe2=0x7f060012;
-        public static final int imageView1=0x7f060015;
-        public static final int imageView2=0x7f06001a;
+        public static final int imageView1=0x7f060018;
+        public static final int imageView2=0x7f06001d;
         public static final int imageViewCachou=0x7f060003;
         public static final int linearLayout1=0x7f060000;
         public static final int outil1=0x7f060001;
@@ -71,8 +74,9 @@ public final class R {
         public static final int panda1=0x7f06000f;
         public static final int panda2=0x7f060013;
         public static final int seekBar=0x7f060009;
-        public static final int textView1=0x7f060017;
+        public static final int textView1=0x7f06001a;
         public static final int textView2=0x7f060008;
+        public static final int to_color=0x7f060017;
     }
     public static final class layout {
         public static final int cachoumain=0x7f030000;
@@ -83,6 +87,7 @@ public final class R {
         public static final int audio2=0x7f040001;
         public static final int audio3=0x7f040002;
         public static final int audio4=0x7f040003;
+        public static final int audio5=0x7f040004;
     }
     public static final class string {
         public static final int ApplicationName=0x7f050001;

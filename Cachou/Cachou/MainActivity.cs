@@ -4,11 +4,7 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using System.Collections.Generic;
-using System.Threading;
-using Android.Media;
 using Cachou.Tutorial;
-using System;
-using System.Globalization;
 
 namespace Cachou
 {
@@ -194,7 +190,7 @@ namespace Cachou
 
         public void HideNurse()
         {
-            FindViewById<LinearLayout>(Resource.Id.choose_nurse).Visibility = ViewStates.Invisible;
+            FindViewById<LinearLayout>(Resource.Id.choose_nurse).Visibility = ViewStates.Gone;
         }
 
         public void ShowNurse()
@@ -206,12 +202,14 @@ namespace Cachou
 
         public void ShowColors()
         {
-            
+            var layout = FindViewById<LinearLayout>(Resource.Id.coloring_nurse);
+            layout.BringToFront();
+            layout.Visibility = ViewStates.Visible;
         }
 
         public void HideColors()
         {
-            
+            FindViewById<LinearLayout>(Resource.Id.coloring_nurse).Visibility = ViewStates.Gone;
         }
     }
 }

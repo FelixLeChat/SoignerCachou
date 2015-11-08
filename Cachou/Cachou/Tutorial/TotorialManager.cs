@@ -78,10 +78,53 @@ namespace Cachou.Tutorial
                     break;
 
                 case 3:
-                    PlayAudio(_mainActivity, Resource.Raw.audio4);
-                    _mainActivity.HideNurse();
-                    _mainActivity.ShowColors();
-                    _step++;
+                    if (obj is ImageView)
+                    {
+                        PlayAudio(_mainActivity, Resource.Raw.audio4);
+                        _mainActivity.HideNurse();
+                        _mainActivity.ShowColors();
+                        var idToPut = ((ImageView) obj).Id;
+                        var res = Resource.Drawable.bear;
+
+                        switch (idToPut)
+                        {
+                            case Resource.Id.girafe1:
+                            case Resource.Id.girafe2:
+                                res = Resource.Drawable.girafe;
+                                break;
+
+                            case Resource.Id.bear1:
+                            case Resource.Id.bear2:
+                            case Resource.Id.bear3:
+                                res = Resource.Drawable.bear;
+                                break;
+
+                            case Resource.Id.panda1:
+                            case Resource.Id.panda2:
+                                res = Resource.Drawable.panda;
+                                break;
+
+                            case Resource.Id.fox1:
+                            case Resource.Id.fox2:
+                                res = Resource.Drawable.fox;
+                                break;
+                        }
+                        _mainActivity.FindViewById<ImageView>(Resource.Id.to_color).SetImageResource(res);
+
+                        _mainActivity.FindViewById<ImageView>(Resource.Id.coloring).Click += OnCompletion;
+                        _step++;
+                    }
+                    break;
+
+                case 4:
+                    if (obj is ImageView)
+                    {
+                        _mainActivity.HideColors();
+                        PlayAudio(_mainActivity, Resource.Raw.audio5);
+
+                        // Trigger animations
+                        // trigger real game
+                    }
                     break;
             }
         }
