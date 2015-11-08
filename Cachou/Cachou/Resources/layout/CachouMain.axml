@@ -94,14 +94,16 @@
         android:layout_marginBottom="10.0dp"
         android:textStyle="bold" />
     <SeekBar
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="30.0dp"
         android:id="@+id/seekBar"
         android:max="100"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="275dp"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="-30dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginBottom="-10dp"
+        android:layout_marginTop="10dp"
+        android:scaleY="3"
+        android:scaleX="3" />
     <Button
         android:text=""
         android:layout_width="395dp"

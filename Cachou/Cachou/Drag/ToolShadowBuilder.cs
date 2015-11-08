@@ -15,7 +15,7 @@ class ToolShadowBuilder : View.DragShadowBuilder
         _shadow = new BitmapDrawable(bm);
 
         // L'ombre devient un genre de gris
-        _shadow.SetColorFilter(Color.ParseColor("#4EB1FB"), PorterDuff.Mode.Multiply);
+        _shadow.SetColorFilter(Color.ParseColor("#000000"), PorterDuff.Mode.Multiply);
     }
 
     public override void OnProvideShadowMetrics(Point size, Point touch)

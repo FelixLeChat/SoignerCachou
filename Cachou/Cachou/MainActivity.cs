@@ -34,6 +34,9 @@ namespace Cachou
                 _tutorialManager = new TotorialManager();
                 _tutorialManager.StartTutorial(this);
             }
+            else
+                ShowScroll();
+
         }
 
         private void ChangeToMainView()
@@ -70,7 +73,7 @@ namespace Cachou
 
             seekBar.StopTrackingTouch += (sender, args) =>
             {
-                ChangeCachouMood(seekBar, true);
+                //ChangeCachouMood(seekBar, true);
             };
         }
 
