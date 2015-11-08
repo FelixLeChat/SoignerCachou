@@ -84,49 +84,46 @@ namespace Cachou
 			public const int clipboard = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int dossier = 2130837517;
+			public const int heart = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int heart = 2130837518;
+			public const int home = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int home = 2130837519;
+			public const int Icon = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int Icon = 2130837520;
+			public const int interest = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int interest = 2130837521;
+			public const int justine = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int justine = 2130837522;
+			public const int justine_docteur = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int justine_docteur = 2130837523;
+			public const int Les_animaux_autour_du_monde = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int Les_animaux_autour_du_monde = 2130837524;
+			public const int login_button = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int login_button = 2130837525;
+			public const int medecine = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int medecine = 2130837526;
+			public const int mute = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int mute = 2130837527;
+			public const int name = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int name = 2130837528;
+			public const int siringe = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int siringe = 2130837529;
+			public const int ste_justine = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int ste_justine = 2130837530;
-			
-			// aapt resource value: 0x7f02001b
-			public const int thermometer = 2130837531;
+			public const int thermometer = 2130837530;
 			
 			static Drawable()
 			{
@@ -213,9 +210,6 @@ namespace Cachou
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
-			
-			// aapt resource value: 0x7f030002
-			public const int SelectNurse = 2130903042;
 			
 			static Layout()
 			{

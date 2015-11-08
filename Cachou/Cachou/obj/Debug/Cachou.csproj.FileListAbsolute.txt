@@ -44,7 +44,6 @@ C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_siringe.png
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\heart.png
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\justine.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\dossier.png
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\les_animaux_autour_du_monde.jpg
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\ste_justine.png
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\justine_docteur.jpg

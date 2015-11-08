@@ -16,16 +16,14 @@
         android:layout_height="100.0dp"
         android:layout_marginBottom="-2dp"
         android:layout_marginTop="0dp" />
-    <Button
-        android:text=""
+    <ImageView
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/outil1"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="115dp"
         android:background="@drawable/blood" />
-    <Button
-        android:text=""
+    <ImageView
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/outil4"
@@ -39,32 +37,28 @@
         android:id="@+id/imageViewCachou"
         android:layout_marginLeft="135dp"
         android:layout_marginTop="-310dp" />
-    <Button
-        android:text=""
+    <ImageView
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/outil2"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="-500dp"
         android:background="@drawable/bandaid" />
-    <Button
-        android:text=""
+    <ImageView
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/outil5"
         android:layout_marginLeft="640dp"
         android:layout_marginTop="-130dp"
         android:background="@drawable/medecine" />
-    <Button
-        android:text=""
+    <ImageView
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/outil3"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/thermometer" />
-    <Button
-        android:text=""
+    <ImageView
         android:layout_width="128.0dp"
         android:layout_height="128.0dp"
         android:id="@+id/outil6"
