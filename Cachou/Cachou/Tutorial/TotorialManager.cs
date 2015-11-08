@@ -138,6 +138,7 @@ namespace Cachou.Tutorial
 
                         _mainActivity.ShowScroll();
                         _mainActivity.ShowTools();
+                        _mainActivity.SetNurse(_selectedNurse);
                         _step++;
                     }
                     break;

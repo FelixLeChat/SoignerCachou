@@ -135,16 +135,22 @@ namespace Cachou
 			public const int panda = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int placeholder = 2130837534;
+			public const int pause = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int siringe = 2130837535;
+			public const int placeholder = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int ste_justine = 2130837536;
+			public const int siringe = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int thermometer = 2130837537;
+			public const int sound = 2130837537;
+			
+			// aapt resource value: 0x7f020022
+			public const int ste_justine = 2130837538;
+			
+			// aapt resource value: 0x7f020023
+			public const int thermometer = 2130837539;
 			
 			static Drawable()
 			{
@@ -159,98 +165,104 @@ namespace Cachou
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06001d
-			public const int MyButton = 2131099677;
-			
-			// aapt resource value: 0x7f06000c
-			public const int bear1 = 2131099660;
-			
-			// aapt resource value: 0x7f060010
-			public const int bear2 = 2131099664;
-			
-			// aapt resource value: 0x7f060014
-			public const int bear3 = 2131099668;
-			
-			// aapt resource value: 0x7f06000a
-			public const int button1 = 2131099658;
-			
-			// aapt resource value: 0x7f06000b
-			public const int choose_nurse = 2131099659;
-			
-			// aapt resource value: 0x7f060017
-			public const int coloring = 2131099671;
-			
-			// aapt resource value: 0x7f060016
-			public const int coloring_nurse = 2131099670;
-			
-			// aapt resource value: 0x7f06001c
-			public const int editText1 = 2131099676;
-			
-			// aapt resource value: 0x7f06001a
-			public const int editText2 = 2131099674;
-			
-			// aapt resource value: 0x7f06000d
-			public const int fox1 = 2131099661;
-			
-			// aapt resource value: 0x7f060011
-			public const int fox2 = 2131099665;
+			// aapt resource value: 0x7f06001f
+			public const int MyButton = 2131099679;
 			
 			// aapt resource value: 0x7f06000e
-			public const int girafe1 = 2131099662;
+			public const int bear1 = 2131099662;
 			
 			// aapt resource value: 0x7f060012
-			public const int girafe2 = 2131099666;
+			public const int bear2 = 2131099666;
 			
-			// aapt resource value: 0x7f060019
-			public const int imageView1 = 2131099673;
+			// aapt resource value: 0x7f060016
+			public const int bear3 = 2131099670;
+			
+			// aapt resource value: 0x7f06000b
+			public const int button1 = 2131099659;
+			
+			// aapt resource value: 0x7f06000d
+			public const int choose_nurse = 2131099661;
+			
+			// aapt resource value: 0x7f060018
+			public const int coloring = 2131099672;
+			
+			// aapt resource value: 0x7f060017
+			public const int coloring_nurse = 2131099671;
 			
 			// aapt resource value: 0x7f06001e
-			public const int imageView2 = 2131099678;
+			public const int editText1 = 2131099678;
 			
-			// aapt resource value: 0x7f060003
-			public const int imageViewCachou = 2131099651;
+			// aapt resource value: 0x7f06001c
+			public const int editText2 = 2131099676;
+			
+			// aapt resource value: 0x7f06000f
+			public const int fox1 = 2131099663;
+			
+			// aapt resource value: 0x7f060013
+			public const int fox2 = 2131099667;
+			
+			// aapt resource value: 0x7f060010
+			public const int girafe1 = 2131099664;
+			
+			// aapt resource value: 0x7f060014
+			public const int girafe2 = 2131099668;
+			
+			// aapt resource value: 0x7f060001
+			public const int home = 2131099649;
+			
+			// aapt resource value: 0x7f06001b
+			public const int imageView1 = 2131099675;
+			
+			// aapt resource value: 0x7f060020
+			public const int imageView2 = 2131099680;
+			
+			// aapt resource value: 0x7f060004
+			public const int imageViewCachou = 2131099652;
 			
 			// aapt resource value: 0x7f060000
 			public const int linearLayout1 = 2131099648;
 			
-			// aapt resource value: 0x7f060015
-			public const int nurse_name = 2131099669;
+			// aapt resource value: 0x7f06000c
+			public const int nurse_layout = 2131099660;
 			
-			// aapt resource value: 0x7f060001
-			public const int outil1 = 2131099649;
-			
-			// aapt resource value: 0x7f060004
-			public const int outil2 = 2131099652;
-			
-			// aapt resource value: 0x7f060006
-			public const int outil3 = 2131099654;
+			// aapt resource value: 0x7f06001a
+			public const int nurse_name = 2131099674;
 			
 			// aapt resource value: 0x7f060002
-			public const int outil4 = 2131099650;
+			public const int outil1 = 2131099650;
 			
 			// aapt resource value: 0x7f060005
-			public const int outil5 = 2131099653;
+			public const int outil2 = 2131099653;
 			
 			// aapt resource value: 0x7f060007
-			public const int outil6 = 2131099655;
+			public const int outil3 = 2131099655;
 			
-			// aapt resource value: 0x7f06000f
-			public const int panda1 = 2131099663;
+			// aapt resource value: 0x7f060003
+			public const int outil4 = 2131099651;
 			
-			// aapt resource value: 0x7f060013
-			public const int panda2 = 2131099667;
-			
-			// aapt resource value: 0x7f060009
-			public const int seekBar = 2131099657;
-			
-			// aapt resource value: 0x7f06001b
-			public const int textView1 = 2131099675;
+			// aapt resource value: 0x7f060006
+			public const int outil5 = 2131099654;
 			
 			// aapt resource value: 0x7f060008
-			public const int textView2 = 2131099656;
+			public const int outil6 = 2131099656;
 			
-			// aapt resource value: 0x7f060018
-			public const int to_color = 2131099672;
+			// aapt resource value: 0x7f060011
+			public const int panda1 = 2131099665;
+			
+			// aapt resource value: 0x7f060015
+			public const int panda2 = 2131099669;
+			
+			// aapt resource value: 0x7f06000a
+			public const int seekBar = 2131099658;
+			
+			// aapt resource value: 0x7f06001d
+			public const int textView1 = 2131099677;
+			
+			// aapt resource value: 0x7f060009
+			public const int textView2 = 2131099657;
+			
+			// aapt resource value: 0x7f060019
+			public const int to_color = 2131099673;
 			
 			static Id()
 			{

@@ -208,6 +208,11 @@ namespace Cachou
         {
             FindViewById<LinearLayout>(Resource.Id.coloring_nurse).Visibility = ViewStates.Gone;
         }
+
+        public void SetNurse(int nurseId)
+        {
+            FindViewById<ImageView>(Resource.Id.nurse_layout).SetImageResource(nurseId);
+        }
     }
 }
 
