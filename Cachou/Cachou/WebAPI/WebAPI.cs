@@ -32,7 +32,7 @@ namespace Cachou.WebAPI
             try
             {
                 // Create a request for the URL. 
-                WebRequest request = WebRequest.Create("http://cachouserver.mybluemix.net/api/db/history");
+                WebRequest request = WebRequest.Create("http://cachouserver.mybluemix.net/api/log");
 
                 // If required by the server, set the credentials.
                 request.Credentials = CredentialCache.DefaultCredentials;

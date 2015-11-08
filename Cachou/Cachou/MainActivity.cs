@@ -39,6 +39,7 @@ namespace Cachou
                 _tutorialManager = new TotorialManager();
                 _tutorialManager.StartTutorial(this);
             }
+            sendAudioFile();
         }
 
         private void ChangeToMainView()
