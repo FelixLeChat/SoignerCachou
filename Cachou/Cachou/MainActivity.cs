@@ -52,6 +52,9 @@ namespace Cachou
             // Hide nurse
             HideNurse();
 
+            // hide colors
+            HideColors();
+
             // Add all tools to list
             _tools.Add(FindViewById<ImageView>(Resource.Id.outil1));
             _tools.Add(FindViewById<ImageView>(Resource.Id.outil2));
@@ -163,14 +166,24 @@ namespace Cachou
 
         public void HideNurse()
         {
-            FindViewById<ImageView>(Resource.Id.choose_nurse).Visibility = ViewStates.Invisible;
+            FindViewById<LinearLayout>(Resource.Id.choose_nurse).Visibility = ViewStates.Invisible;
         }
 
         public void ShowNurse()
         {
-            var imageview = FindViewById<ImageView>(Resource.Id.choose_nurse);
-            imageview.BringToFront();
-            imageview.Visibility = ViewStates.Visible;
+            var layout = FindViewById<LinearLayout>(Resource.Id.choose_nurse);
+            layout.BringToFront();
+            layout.Visibility = ViewStates.Visible;
+        }
+
+        public void ShowColors()
+        {
+            
+        }
+
+        public void HideColors()
+        {
+            
         }
     }
 }

@@ -1,53 +1,7 @@
 C:\Users\Félix\Desktop\Ecole\ibm_bluemix\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.csprojResolveAssemblyReference.cache
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.dll
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.pdb
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.Cachou.apk
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.Cachou-Signed.apk
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.csprojResolveAssemblyReference.cache
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.dll
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.pdb
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\android\bin\Cachou.Cachou.apk
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\layout\main.xml
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\values\strings.xml
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\icon.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\R.cs.flag
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\uploadflags.txt
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\System.Net.Http.Extensions.dll
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\System.Net.Http.Formatting.dll
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\System.Net.Http.Primitives.dll
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.dll.config
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\background.jpg
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\login_button.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\layout\cachoumain.xml
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\bandaid.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\home.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\medecine.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\mute.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\siringe.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\thermometer.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\age.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\interest.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cachou.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cachou_confu.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cachou_happy.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cachou_triste.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blood.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\name.png
 C:\Users\alex__000\Documents\Visual Studio 2013\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.csprojResolveAssemblyReference.cache
 C:\Users\alex__000\Documents\Visual Studio 2013\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.dll
 C:\Users\alex__000\Documents\Visual Studio 2013\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.pdb
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_bandaid.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_heart.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_pills.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_siringe.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\heart.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\justine.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\les_animaux_autour_du_monde.jpg
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\ste_justine.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\justine_docteur.jpg
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\clipboard.jpg
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.dll.config
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.dll
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.pdb
@@ -89,7 +43,58 @@ C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\clipboard.jpg
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\R.cs.flag
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\uploadflags.txt
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.dll.config
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.pdb
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.Cachou.apk
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Cachou.Cachou-Signed.apk
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.dll
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.pdb
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\android\bin\Cachou.Cachou.apk
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\layout\cachoumain.xml
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\layout\main.xml
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\values\strings.xml
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\icon.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\background.jpg
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\login_button.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cachou_happy.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\age.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\bandaid.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blood.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cachou.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cachou_confu.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\cachou_triste.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\home.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\interest.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\medecine.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\mute.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\name.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\siringe.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\thermometer.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_bandaid.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_heart.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_pills.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_siringe.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\heart.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\justine.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\les_animaux_autour_du_monde.jpg
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\ste_justine.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\justine_docteur.jpg
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\clipboard.jpg
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\placeholder.png
-C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio1.mp3
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio2.mp3
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio1.mp3
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio3.mp3
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\bear.jpg
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\fox.jpg
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\girafe.jpg
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\panda.jpg
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\R.cs.flag
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\uploadflags.txt
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\croix_rouge.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio4.mp3

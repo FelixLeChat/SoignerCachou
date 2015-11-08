@@ -24,6 +24,20 @@ namespace Cachou.Tutorial
 
             // start audio 1
             PlayAudio(_mainActivity, Resource.Raw.audio1);
+
+            // Add event on nurse click
+            _mainActivity.FindViewById<ImageView>(Resource.Id.bear1).Click += OnCompletion;
+            _mainActivity.FindViewById<ImageView>(Resource.Id.bear2).Click += OnCompletion;
+            _mainActivity.FindViewById<ImageView>(Resource.Id.bear3).Click += OnCompletion;
+
+            _mainActivity.FindViewById<ImageView>(Resource.Id.fox1).Click += OnCompletion;
+            _mainActivity.FindViewById<ImageView>(Resource.Id.fox2).Click += OnCompletion;
+
+            _mainActivity.FindViewById<ImageView>(Resource.Id.girafe1).Click += OnCompletion;
+            _mainActivity.FindViewById<ImageView>(Resource.Id.girafe2).Click += OnCompletion;
+
+            _mainActivity.FindViewById<ImageView>(Resource.Id.panda1).Click += OnCompletion;
+            _mainActivity.FindViewById<ImageView>(Resource.Id.panda2).Click += OnCompletion;
         }
 
         public void PlayAudio(MainActivity act,int ress)
@@ -58,7 +72,15 @@ namespace Cachou.Tutorial
                     break;
                 case 2:
                     PlayAudio(_mainActivity, Resource.Raw.audio3);
+                    _mainActivity.HideTools();
                     _mainActivity.ShowNurse();
+                    _step++;
+                    break;
+
+                case 3:
+                    PlayAudio(_mainActivity, Resource.Raw.audio4);
+                    _mainActivity.HideNurse();
+                    _mainActivity.ShowColors();
                     _step++;
                     break;
             }
