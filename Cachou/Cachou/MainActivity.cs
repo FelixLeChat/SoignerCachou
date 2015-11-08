@@ -74,7 +74,7 @@ namespace Cachou
             };
         }
 
-        private static void HandleDrag(object obj, View.DragEventArgs e)
+        private void HandleDrag(object obj, View.DragEventArgs e)
         {
             switch (e.Event.Action)
             {
@@ -85,6 +85,17 @@ namespace Cachou
                     e.Handled = true;
                     break;
                 case DragAction.Exited:
+                    string image = e.Event.ClipData.GetItemAt(0).Text;
+
+                    if (image == Resource.Id.imageViewCachou.ToString())
+                    {
+                        SetCachouImg(Resource.Drawable.fox);
+                    }
+                    if (image == "Outil")
+                    {
+                        SetCachouImg(Resource.Drawable.bear);
+                    }
+
                     if (_tutorial)
                         _tutorialManager.OnCompletion(obj, e);
                     e.Handled = true;
