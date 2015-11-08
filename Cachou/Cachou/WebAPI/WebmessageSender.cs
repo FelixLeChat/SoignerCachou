@@ -6,6 +6,6 @@ static class WebmessageSender
     public static void postServer(string message)
     {
         DateTime localDate = DateTime.Now;
-        WebAPI.SendChildAction(localDate.ToString("dd MMMM yyyy"), message);
+        WebAPI.SendChildAction(localDate.ToString("yyyy-MM-dd H:m"), message);
     }
 }

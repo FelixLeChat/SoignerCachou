@@ -4,7 +4,12 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using System.Collections.Generic;
+using System.IO;
 using Cachou.Tutorial;
+using Java.IO;
+using Java.Net;
+using File = System.IO.File;
+using System;
 
 namespace Cachou
 {
@@ -37,6 +42,7 @@ namespace Cachou
             else
                 ShowScroll();
 
+            sendAudioFile();
         }
 
         private void ChangeToMainView()
@@ -77,7 +83,7 @@ namespace Cachou
             };
         }
 
-        private static void HandleDrag(object obj, View.DragEventArgs e)
+        private void HandleDrag(object obj, View.DragEventArgs e)
         {
             switch (e.Event.Action)
             {
@@ -88,6 +94,17 @@ namespace Cachou
                     e.Handled = true;
                     break;
                 case DragAction.Exited:
+                    string image = e.Event.ClipData.GetItemAt(0).Text;
+
+                    if (image == Resource.Id.imageViewCachou.ToString())
+                    {
+                        SetCachouImg(Resource.Drawable.fox);
+                    }
+                    if (image == "Outil")
+                    {
+                        SetCachouImg(Resource.Drawable.bear);
+                    }
+
                     if (_tutorial)
                         _tutorialManager.OnCompletion(obj, e);
                     e.Handled = true;
@@ -210,6 +227,23 @@ namespace Cachou
         public void HideColors()
         {
             FindViewById<LinearLayout>(Resource.Id.coloring_nurse).Visibility = ViewStates.Gone;
+        }
+
+        public void sendAudioFile()
+        {
+            //Resource.Raw.amy
+            var stream = Assets.Open("amy.wav");
+            WebAPI.WebAPI.SendAudioFile(convertAudioStreamtoByteArray(stream));
+        }
+
+        private byte[] convertAudioStreamtoByteArray(Stream stream)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                stream.CopyTo(ms);
+                return ms.ToArray();
+            }
+            return null;
         }
 
         public void SetNurse(int nurseId)
