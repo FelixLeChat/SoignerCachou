@@ -102,7 +102,8 @@ namespace Cachou
 
         public static void ChangeCachouMood(SeekBar seekBar, bool sendServer = false)
         {
-            int div = seekBar.Progress/25;
+
+            int div = (seekBar.Progress%50)/12;
 
             switch (div)
             {
@@ -121,15 +122,14 @@ namespace Cachou
                     }
                     break;
                 case 2:
-                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
+                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou_triste);
                     if (sendServer)
                     {
                         WebmessageSender.postServer("Justine dit que Cachou est content.");
                     }
                     break;
-                case 3:
-                case 4:
-                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou_triste);
+                default:
+                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
                     if (sendServer)
                     {
                         WebmessageSender.postServer("Justine dit que Cachou est triste.");

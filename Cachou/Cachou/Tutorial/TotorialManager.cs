@@ -8,6 +8,7 @@ namespace Cachou.Tutorial
     class TotorialManager
     {
         private MediaPlayer _player = new MediaPlayer();
+        private int _selectedNurse;
         private MainActivity _mainActivity;
         private int _step = 0;
 
@@ -109,6 +110,8 @@ namespace Cachou.Tutorial
                                 res = Resource.Drawable.fox;
                                 break;
                         }
+                        // set nurse tutorial
+                        _selectedNurse = res;
                         _mainActivity.FindViewById<ImageView>(Resource.Id.to_color).SetImageResource(res);
 
                         _mainActivity.FindViewById<ImageView>(Resource.Id.coloring).Click += OnCompletion;
@@ -134,6 +137,7 @@ namespace Cachou.Tutorial
                         PlayAudio(_mainActivity, Resource.Raw.audio6);
 
                         _mainActivity.ShowScroll();
+                        _mainActivity.ShowTools();
                         _step++;
                     }
                     break;

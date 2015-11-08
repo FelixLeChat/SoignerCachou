@@ -47,24 +47,25 @@ public final class R {
         public static final int thermometer=0x7f020021;
     }
     public static final class id {
-        public static final int MyButton=0x7f06001c;
+        public static final int MyButton=0x7f06001d;
         public static final int bear1=0x7f06000c;
         public static final int bear2=0x7f060010;
         public static final int bear3=0x7f060014;
         public static final int button1=0x7f06000a;
         public static final int choose_nurse=0x7f06000b;
-        public static final int coloring=0x7f060016;
-        public static final int coloring_nurse=0x7f060015;
-        public static final int editText1=0x7f06001b;
-        public static final int editText2=0x7f060019;
+        public static final int coloring=0x7f060017;
+        public static final int coloring_nurse=0x7f060016;
+        public static final int editText1=0x7f06001c;
+        public static final int editText2=0x7f06001a;
         public static final int fox1=0x7f06000d;
         public static final int fox2=0x7f060011;
         public static final int girafe1=0x7f06000e;
         public static final int girafe2=0x7f060012;
-        public static final int imageView1=0x7f060018;
-        public static final int imageView2=0x7f06001d;
+        public static final int imageView1=0x7f060019;
+        public static final int imageView2=0x7f06001e;
         public static final int imageViewCachou=0x7f060003;
         public static final int linearLayout1=0x7f060000;
+        public static final int nurse_name=0x7f060015;
         public static final int outil1=0x7f060001;
         public static final int outil2=0x7f060004;
         public static final int outil3=0x7f060006;
@@ -74,9 +75,9 @@ public final class R {
         public static final int panda1=0x7f06000f;
         public static final int panda2=0x7f060013;
         public static final int seekBar=0x7f060009;
-        public static final int textView1=0x7f06001a;
+        public static final int textView1=0x7f06001b;
         public static final int textView2=0x7f060008;
-        public static final int to_color=0x7f060017;
+        public static final int to_color=0x7f060018;
     }
     public static final class layout {
         public static final int cachoumain=0x7f030000;
