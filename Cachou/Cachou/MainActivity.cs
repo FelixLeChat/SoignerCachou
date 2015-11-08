@@ -12,7 +12,7 @@ namespace Cachou
     public class MainActivity : Activity
     {
         private static ImageView _cachouImageView;
-        private List<ImageView> _tools = new List<ImageView>();
+        private readonly List<ImageView> _tools = new List<ImageView>();
         private SeekBar _seekBar;
         public static bool _tutorial = true;
         private static TotorialManager _tutorialManager;
@@ -65,7 +65,12 @@ namespace Cachou
         {
             seekBar.ProgressChanged += (s, args) =>
             {
-                ChangeCachouMood(seekBar, false);
+                ChangeCachouMood(seekBar);
+            };
+
+            seekBar.StopTrackingTouch += (sender, args) =>
+            {
+                ChangeCachouMood(seekBar, true);
             };
         }
 
@@ -111,28 +116,28 @@ namespace Cachou
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou);
                     if (sendServer)
                     {
-                        WebmessageSender.postServer("Justine dit que Cachou est normal.");
+                        WebmessageSender.postServer("Cachou est normal.");
                     }
                     break;
                 case 1:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
                     if (sendServer)
                     {
-                        WebmessageSender.postServer("Justine dit que Cachou est confu.");
+                        WebmessageSender.postServer("Cachou est confu.");
                     }
                     break;
                 case 2:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_triste);
                     if (sendServer)
                     {
-                        WebmessageSender.postServer("Justine dit que Cachou est content.");
+                        WebmessageSender.postServer("Cachou est content.");
                     }
                     break;
                 default:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
                     if (sendServer)
                     {
-                        WebmessageSender.postServer("Justine dit que Cachou est triste.");
+                        WebmessageSender.postServer("Cachou est triste.");
                     }
                     break;
             }
