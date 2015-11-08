@@ -7,6 +7,8 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using System.Collections.Generic;
+using System;
+using System.Globalization;
 
 namespace Cachou
 {
@@ -85,19 +87,33 @@ namespace Cachou
             {
                 case 0:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou);
+                    webMessageSender.postServer("Justine dit que Cachou est normal.");
                     break;
                 case 1:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
+                    webMessageSender.postServer("Justine dit que Cachou est confu.");
                     break;
                 case 2:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
+                    webMessageSender.postServer("Justine dit que Cachou est content.");
                     break;
                 case 3:
                 case 4:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_triste);
+                    webMessageSender.postServer("Justine dit que Cachou est triste.");
                     break;
             }
 
+        }
+
+        static class webMessageSender
+        {
+            public static void postServer(string message)
+            {
+                DateTime localDate = DateTime.Now;
+                string culture = "en-GB";
+                WebAPI.WebAPI.SendChildAction(localDate.ToString(culture), message);
+            } 
         }
     }
 }

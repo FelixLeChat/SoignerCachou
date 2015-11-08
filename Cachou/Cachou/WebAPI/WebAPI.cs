@@ -22,9 +22,9 @@ namespace Cachou.WebAPI
             return CallApi(Method.POST, "http://cachouserver.mybluemix.net/api/test");
         }
 
-        public static void SendChildAction(string action)
+        public static void SendChildAction(string date, string action)
         {
-            CallApi(Method.POST, "http://cachouserver.mybluemix.net/api/db/history", "{\"date\":\"2015-2-11\", \"action\":\"" + action + "\"}");
+            CallApi(Method.POST, "http://cachouserver.mybluemix.net/api/db/history", "{\"date\":\"" + date + "\", \"action\":\"" + action + "\"}");
         }
 
         private static string CallApi(Method method, string url, string data = null)

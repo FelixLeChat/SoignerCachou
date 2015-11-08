@@ -83,7 +83,6 @@ C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\blue_siringe.png
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\heart.png
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\justine.png
-C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\dossier.png
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\les_animaux_autour_du_monde.jpg
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\ste_justine.png
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\justine_docteur.jpg
