@@ -4,7 +4,12 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using System.Collections.Generic;
+using System.IO;
 using Cachou.Tutorial;
+using Java.IO;
+using Java.Net;
+using File = System.IO.File;
+using System;
 
 namespace Cachou
 {
@@ -218,6 +223,20 @@ namespace Cachou
         public void HideColors()
         {
             FindViewById<LinearLayout>(Resource.Id.coloring_nurse).Visibility = ViewStates.Gone;
+        }
+
+        public void sendAudioFile()
+        {
+            //Resource.Raw.amy
+            var uri = URI.Create("android.resource://Cachou.Cachou/" + Resource.Raw.amy);
+
+            var fIStream = new Java.IO.FileInputStream(new Java.IO.File(uri));
+            WebAPI.WebAPI.SendAudioFile(convertAudioStreamtoByteArray(fIStream));
+        }
+
+        private byte[] convertAudioStreamtoByteArray(FileInputStream fIStream)
+        {
+            return fIStream.ToArray<byte>();
         }
     }
 }
