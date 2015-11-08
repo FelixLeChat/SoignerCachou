@@ -35,36 +35,42 @@ public final class R {
         public static final int medecine=0x7f020015;
         public static final int mute=0x7f020016;
         public static final int name=0x7f020017;
-        public static final int siringe=0x7f020018;
-        public static final int ste_justine=0x7f020019;
-        public static final int thermometer=0x7f02001a;
+        public static final int placeholder=0x7f020018;
+        public static final int siringe=0x7f020019;
+        public static final int ste_justine=0x7f02001a;
+        public static final int thermometer=0x7f02001b;
     }
     public static final class id {
-        public static final int MyButton=0x7f050010;
-        public static final int button1=0x7f05000b;
-        public static final int editText1=0x7f05000f;
-        public static final int editText2=0x7f05000d;
-        public static final int imageView1=0x7f05000c;
-        public static final int imageView2=0x7f050011;
-        public static final int imageView3=0x7f050001;
-        public static final int imageViewCachou=0x7f050004;
-        public static final int linearLayout1=0x7f050000;
-        public static final int outil1=0x7f050002;
-        public static final int outil2=0x7f050005;
-        public static final int outil3=0x7f050007;
-        public static final int outil4=0x7f050003;
-        public static final int outil5=0x7f050006;
-        public static final int outil6=0x7f050008;
-        public static final int seekBar=0x7f05000a;
-        public static final int textView1=0x7f05000e;
-        public static final int textView2=0x7f050009;
+        public static final int MyButton=0x7f060010;
+        public static final int button1=0x7f06000a;
+        public static final int choose_nurse=0x7f06000b;
+        public static final int editText1=0x7f06000f;
+        public static final int editText2=0x7f06000d;
+        public static final int imageView1=0x7f06000c;
+        public static final int imageView2=0x7f060011;
+        public static final int imageViewCachou=0x7f060003;
+        public static final int linearLayout1=0x7f060000;
+        public static final int outil1=0x7f060001;
+        public static final int outil2=0x7f060004;
+        public static final int outil3=0x7f060006;
+        public static final int outil4=0x7f060002;
+        public static final int outil5=0x7f060005;
+        public static final int outil6=0x7f060007;
+        public static final int seekBar=0x7f060009;
+        public static final int textView1=0x7f06000e;
+        public static final int textView2=0x7f060008;
     }
     public static final class layout {
         public static final int cachoumain=0x7f030000;
         public static final int main=0x7f030001;
     }
+    public static final class raw {
+        public static final int audio1=0x7f040000;
+        public static final int audio2=0x7f040001;
+        public static final int audio3=0x7f040002;
+    }
     public static final class string {
-        public static final int ApplicationName=0x7f040001;
-        public static final int Hello=0x7f040000;
+        public static final int ApplicationName=0x7f050001;
+        public static final int Hello=0x7f050000;
     }
 }

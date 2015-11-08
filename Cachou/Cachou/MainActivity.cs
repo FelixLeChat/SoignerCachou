@@ -1,12 +1,12 @@
 ﻿using Android.App;
-using Android.Content;
 using Android.Content.PM;
-using Android.Graphics;
-using Android.Graphics.Drawables;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 using System.Collections.Generic;
+using System.Threading;
+using Android.Media;
+using Cachou.Tutorial;
 
 namespace Cachou
 {
@@ -15,6 +15,9 @@ namespace Cachou
     {
         private static ImageView _cachouImageView;
         private List<ImageView> _tools = new List<ImageView>();
+        private SeekBar _seekBar;
+        public static bool _tutorial = true;
+        private static TotorialManager _tutorialManager;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -24,16 +27,30 @@ namespace Cachou
             SetContentView(Resource.Layout.Main);
             Button button = FindViewById<Button>(Resource.Id.MyButton);
             button.Click += delegate { ChangeToMainView(); };
+
+            // debug 
+            ChangeToMainView();
+
+            if (_tutorial)
+            {
+                _tutorialManager = new TotorialManager();
+                _tutorialManager.StartTutorial(this);
+            }
         }
 
         private void ChangeToMainView()
         {
+            // Starting tutorial
             SetContentView(Resource.Layout.CachouMain);
-            var seekBar = FindViewById<SeekBar>(Resource.Id.seekBar);
-            seekBar.ProgressChanged += ChangeCachouMood;
+            _seekBar = FindViewById<SeekBar>(Resource.Id.seekBar);
+            _seekBar.ProgressChanged += ChangeCachouMood;
 
             _cachouImageView = FindViewById<ImageView>(Resource.Id.imageViewCachou);
 
+            // Hide nurse
+            HideNurse();
+
+            // Add all tools to list
             _tools.Add(FindViewById<ImageView>(Resource.Id.outil1));
             _tools.Add(FindViewById<ImageView>(Resource.Id.outil2));
             _tools.Add(FindViewById<ImageView>(Resource.Id.outil3));
@@ -41,11 +58,7 @@ namespace Cachou
             _tools.Add(FindViewById<ImageView>(Resource.Id.outil5));
             _tools.Add(FindViewById<ImageView>(Resource.Id.outil6));
 
-            foreach (var imageView in _tools)
-            {
-                imageView.Drag += HandleDrag;
-                imageView.SetOnTouchListener(new ToolTouchListener());
-            }
+            AddEventOnDrag();
         }
 
         private static void HandleDrag(object obj, View.DragEventArgs e)
@@ -59,6 +72,8 @@ namespace Cachou
                     e.Handled = true;
                     break;
                 case DragAction.Exited:
+                    if (_tutorial)
+                        _tutorialManager.OnCompletion(obj, e);
                     e.Handled = true;
                     break;
                 case DragAction.Drop:
@@ -98,6 +113,58 @@ namespace Cachou
                     break;
             }
 
+        }
+
+        public void HideTools()
+        {
+            foreach (var imageView in _tools)
+            {
+                imageView.Visibility = ViewStates.Invisible;
+            }
+        }
+
+        public void ShowTools()
+        {
+            foreach (var imageView in _tools)
+            {
+                imageView.Visibility = ViewStates.Visible;
+            }
+        }
+
+        public void HideScroll()
+        {
+            _seekBar.Visibility = ViewStates.Invisible;
+        }
+
+        public void ShowScroll()
+        {
+            _seekBar.Visibility = ViewStates.Visible;
+        }
+
+        public void AddEventOnDrag()
+        {
+            foreach (var imageView in _tools)
+            {
+                imageView.Drag += HandleDrag;
+                imageView.SetOnTouchListener(new ToolTouchListener());
+            }
+        }
+
+        public void SetCachouImg(int res)
+        {
+            _cachouImageView.SetImageResource(res);
+        }
+
+        public void HideNurse()
+        {
+            FindViewById<ImageView>(Resource.Id.choose_nurse).Visibility = ViewStates.Invisible;
+        }
+
+        public void ShowNurse()
+        {
+            var imageview = FindViewById<ImageView>(Resource.Id.choose_nurse);
+            imageview.BringToFront();
+            imageview.Visibility = ViewStates.Visible;
         }
     }
 }

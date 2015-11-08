@@ -90,3 +90,7 @@ C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\clipboard.jpg
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\R.cs.flag
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\uploadflags.txt
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\placeholder.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio1.mp3
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio2.mp3
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio3.mp3
