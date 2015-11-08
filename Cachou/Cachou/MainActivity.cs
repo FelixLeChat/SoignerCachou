@@ -45,7 +45,7 @@ namespace Cachou
             // Starting tutorial
             SetContentView(Resource.Layout.CachouMain);
             _seekBar = FindViewById<SeekBar>(Resource.Id.seekBar);
-            _seekBar.ProgressChanged += ChangeCachouMood;
+            handleSeekBarDrag(_seekBar);
 
             _cachouImageView = FindViewById<ImageView>(Resource.Id.imageViewCachou);
 
@@ -64,6 +64,22 @@ namespace Cachou
             _tools.Add(FindViewById<ImageView>(Resource.Id.outil6));
 
             AddEventOnDrag();
+        }
+
+        private void handleSeekBarDrag(SeekBar seekBar)
+        {
+            seekBar.Drag += (s, args) =>
+            {
+                //Si on relache la barre
+                if (args.Event.Action == DragAction.Exited)
+                {
+                    ChangeCachouMood(seekBar, true);
+                }
+                else
+                {
+                    ChangeCachouMood(seekBar);
+                }
+            };
         }
 
         private static void HandleDrag(object obj, View.DragEventArgs e)
@@ -97,28 +113,40 @@ namespace Cachou
             _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
         }
 
-        public static void ChangeCachouMood(object sender, SeekBar.ProgressChangedEventArgs e)
+        public static void ChangeCachouMood(SeekBar seekBar, bool sendServer = false)
         {
-            int div = e.Progress/25;
+            int div = seekBar.Progress/25;
 
             switch (div)
             {
                 case 0:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou);
-                    WebmessageSender.postServer("Justine dit que Cachou est normal.");
+                    if (sendServer)
+                    {
+                        WebmessageSender.postServer("Justine dit que Cachou est normal.");
+                    }
                     break;
                 case 1:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
-                    WebmessageSender.postServer("Justine dit que Cachou est confu.");
+                    if (sendServer)
+                    {
+                        WebmessageSender.postServer("Justine dit que Cachou est confu.");
+                    }
                     break;
                 case 2:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
-                    WebmessageSender.postServer("Justine dit que Cachou est content.");
+                    if (sendServer)
+                    {
+                        WebmessageSender.postServer("Justine dit que Cachou est content.");
+                    }
                     break;
                 case 3:
                 case 4:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_triste);
-                    WebmessageSender.postServer("Justine dit que Cachou est triste.");
+                    if (sendServer)
+                    {
+                        WebmessageSender.postServer("Justine dit que Cachou est triste.");
+                    }
                     break;
             }
 
