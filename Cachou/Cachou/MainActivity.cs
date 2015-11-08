@@ -229,18 +229,20 @@ namespace Cachou
         public void sendAudioFile()
         {
             //Resource.Raw.amy
-            var uri = URI.Create("android.resource://Cachou.Cachou/" + Resource.Raw.amy);
-
-            var fIStream = new Java.IO.FileInputStream(new Java.IO.File(uri));
-            WebAPI.WebAPI.SendAudioFile(convertAudioStreamtoByteArray(fIStream));
+            var stream = Assets.Open("amy.wav");
+            WebAPI.WebAPI.SendAudioFile(convertAudioStreamtoByteArray(stream));
         }
 
-        private byte[] convertAudioStreamtoByteArray(FileInputStream fIStream)
+        private byte[] convertAudioStreamtoByteArray(Stream stream)
         {
-            return fIStream.ToArray<byte>();
-			
-		}
-		
+            using (MemoryStream ms = new MemoryStream())
+            {
+                stream.CopyTo(ms);
+                return ms.ToArray();
+            }
+            return null;
+        }
+
         public void SetNurse(int nurseId)
         {
             FindViewById<ImageView>(Resource.Id.nurse_layout).SetImageResource(nurseId);

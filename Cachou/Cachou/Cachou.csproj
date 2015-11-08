@@ -81,6 +81,7 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="Assets\amy.wav" />
     <AndroidResource Include="Resources\layout\CachouMain.axml" />
   </ItemGroup>
   <ItemGroup>
@@ -178,9 +179,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\audio2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\amy.wav" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\audio1.mp3" />
