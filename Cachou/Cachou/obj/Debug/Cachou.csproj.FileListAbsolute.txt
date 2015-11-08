@@ -103,3 +103,4 @@ C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio5.mp
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\raw\audio6.mp3
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\pause.png
 C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\sound.png
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.csprojResolveAssemblyReference.cache

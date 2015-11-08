@@ -131,6 +131,13 @@ namespace Cachou.Tutorial
                         _step++;
                     }
                     break;
+                /*case 5:
+                    if (obj is MediaPlayer)
+                    {
+                        _step++;
+                    }
+                    break;*/
+
                 case 5:
                     if (obj is MediaPlayer)
                     {
