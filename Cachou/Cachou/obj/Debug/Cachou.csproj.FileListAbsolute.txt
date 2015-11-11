@@ -118,3 +118,4 @@ C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\res\drawable\sound.png
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\R.cs.flag
 C:\Users\alex__000\Documents\Visual Studio 2015\Projects\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\uploadflags.txt
+C:\Users\Public\hackhealth2015-xamarin\Cachou\Cachou\obj\Debug\Cachou.csprojResolveAssemblyReference.cache

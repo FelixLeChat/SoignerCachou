@@ -19,7 +19,7 @@ namespace Cachou
         private static ImageView _cachouImageView;
         private readonly List<ImageView> _tools = new List<ImageView>();
         private SeekBar _seekBar;
-        public static bool _tutorial = true;
+        public static bool _tutorial = false;
         private static TotorialManager _tutorialManager;
 
         protected override void OnCreate(Bundle bundle)
@@ -40,9 +40,13 @@ namespace Cachou
                 _tutorialManager.StartTutorial(this);
             }
             else
+            {
                 ShowScroll();
+                SetNurse(Resource.Drawable.girafe);
+            }
+                
 
-            sendAudioFile();
+            //sendAudioFile();
         }
 
         private void ChangeToMainView()
@@ -77,10 +81,10 @@ namespace Cachou
                 ChangeCachouMood(seekBar);
             };
 
-            seekBar.StopTrackingTouch += (sender, args) =>
+            /*seekBar.StopTrackingTouch += (sender, args) =>
             {
-                //ChangeCachouMood(seekBar, true);
-            };
+                ChangeCachouMood(seekBar, true);
+            };*/
         }
 
         private void HandleDrag(object obj, View.DragEventArgs e)
@@ -94,7 +98,7 @@ namespace Cachou
                     e.Handled = true;
                     break;
                 case DragAction.Exited:
-                    string image = e.Event.ClipData.GetItemAt(0).Text;
+                    /*string image = e.Event.ClipData.GetItemAt(0).Text;
 
                     if (image == Resource.Id.imageViewCachou.ToString())
                     {
@@ -103,7 +107,7 @@ namespace Cachou
                     if (image == "Outil")
                     {
                         SetCachouImg(Resource.Drawable.bear);
-                    }
+                    }*/
 
                     if (_tutorial)
                         _tutorialManager.OnCompletion(obj, e);
@@ -134,30 +138,30 @@ namespace Cachou
             {
                 case 0:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou);
-                    if (sendServer)
+                    /*if (sendServer)
                     {
                         WebmessageSender.postServer("Cachou est normal.");
-                    }
+                    }*/
                     break;
                 case 1:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
                     if (sendServer)
                     {
-                        WebmessageSender.postServer("Cachou est confu.");
+                        //WebmessageSender.postServer("Cachou est confu.");
                     }
                     break;
                 case 2:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_triste);
                     if (sendServer)
                     {
-                        WebmessageSender.postServer("Cachou est content.");
+                       //WebmessageSender.postServer("Cachou est content.");
                     }
                     break;
                 default:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
                     if (sendServer)
                     {
-                        WebmessageSender.postServer("Cachou est triste.");
+                        //WebmessageSender.postServer("Cachou est triste.");
                     }
                     break;
             }
@@ -232,8 +236,8 @@ namespace Cachou
         public void sendAudioFile()
         {
             //Resource.Raw.amy
-            var stream = Assets.Open("amy.wav");
-            WebAPI.WebAPI.SendAudioFile(convertAudioStreamtoByteArray(stream));
+            /*var stream = Assets.Open("amy.wav");
+            WebAPI.WebAPI.SendAudioFile(convertAudioStreamtoByteArray(stream));*/
         }
 
         private byte[] convertAudioStreamtoByteArray(Stream stream)

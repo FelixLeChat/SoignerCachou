@@ -4,14 +4,12 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using System.Collections.Generic;
-<<<<<<< HEAD
-using System.Threading;
-using Android.Media;
+using System.IO;
 using Cachou.Tutorial;
-=======
+using Java.IO;
+using Java.Net;
+using File = System.IO.File;
 using System;
-using System.Globalization;
->>>>>>> cca75eff2666c2a5b23bc8177418d7039e1f4e29
 
 namespace Cachou
 {
@@ -19,7 +17,7 @@ namespace Cachou
     public class MainActivity : Activity
     {
         private static ImageView _cachouImageView;
-        private List<ImageView> _tools = new List<ImageView>();
+        private readonly List<ImageView> _tools = new List<ImageView>();
         private SeekBar _seekBar;
         public static bool _tutorial = true;
         private static TotorialManager _tutorialManager;
@@ -41,6 +39,13 @@ namespace Cachou
                 _tutorialManager = new TotorialManager();
                 _tutorialManager.StartTutorial(this);
             }
+<<<<<<< HEAD
+            else
+                ShowScroll();
+
+=======
+            sendAudioFile();
+>>>>>>> e0cb6fec3650e31a9887825f7f83b971f9c1dedb
         }
 
         private void ChangeToMainView()
@@ -48,12 +53,14 @@ namespace Cachou
             // Starting tutorial
             SetContentView(Resource.Layout.CachouMain);
             _seekBar = FindViewById<SeekBar>(Resource.Id.seekBar);
-            _seekBar.ProgressChanged += ChangeCachouMood;
 
             _cachouImageView = FindViewById<ImageView>(Resource.Id.imageViewCachou);
 
             // Hide nurse
             HideNurse();
+
+            // hide colors
+            HideColors();
 
             // Add all tools to list
             _tools.Add(FindViewById<ImageView>(Resource.Id.outil1));
@@ -66,7 +73,20 @@ namespace Cachou
             AddEventOnDrag();
         }
 
-        private static void HandleDrag(object obj, View.DragEventArgs e)
+        private void handleSeekBarDrag(SeekBar seekBar)
+        {
+            seekBar.ProgressChanged += (s, args) =>
+            {
+                ChangeCachouMood(seekBar);
+            };
+
+            seekBar.StopTrackingTouch += (sender, args) =>
+            {
+                //ChangeCachouMood(seekBar, true);
+            };
+        }
+
+        private void HandleDrag(object obj, View.DragEventArgs e)
         {
             switch (e.Event.Action)
             {
@@ -77,6 +97,17 @@ namespace Cachou
                     e.Handled = true;
                     break;
                 case DragAction.Exited:
+                    string image = e.Event.ClipData.GetItemAt(0).Text;
+
+                    if (image == Resource.Id.imageViewCachou.ToString())
+                    {
+                        SetCachouImg(Resource.Drawable.fox);
+                    }
+                    if (image == "Outil")
+                    {
+                        SetCachouImg(Resource.Drawable.bear);
+                    }
+
                     if (_tutorial)
                         _tutorialManager.OnCompletion(obj, e);
                     e.Handled = true;
@@ -97,34 +128,45 @@ namespace Cachou
             _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
         }
 
-        public static void ChangeCachouMood(object sender, SeekBar.ProgressChangedEventArgs e)
+        public static void ChangeCachouMood(SeekBar seekBar, bool sendServer = false)
         {
-            int div = e.Progress/25;
+
+            int div = (seekBar.Progress%50)/12;
 
             switch (div)
             {
                 case 0:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou);
-                    webMessageSender.postServer("Justine dit que Cachou est normal.");
+                    if (sendServer)
+                    {
+                        WebmessageSender.postServer("Cachou est normal.");
+                    }
                     break;
                 case 1:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_Confu);
-                    webMessageSender.postServer("Justine dit que Cachou est confu.");
+                    if (sendServer)
+                    {
+                        WebmessageSender.postServer("Cachou est confu.");
+                    }
                     break;
                 case 2:
-                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
-                    webMessageSender.postServer("Justine dit que Cachou est content.");
-                    break;
-                case 3:
-                case 4:
                     _cachouImageView.SetImageResource(Resource.Drawable.Cachou_triste);
-                    webMessageSender.postServer("Justine dit que Cachou est triste.");
+                    if (sendServer)
+                    {
+                        WebmessageSender.postServer("Cachou est content.");
+                    }
+                    break;
+                default:
+                    _cachouImageView.SetImageResource(Resource.Drawable.Cachou_happy);
+                    if (sendServer)
+                    {
+                        WebmessageSender.postServer("Cachou est triste.");
+                    }
                     break;
             }
 
         }
 
-<<<<<<< HEAD
         public void HideTools()
         {
             foreach (var imageView in _tools)
@@ -143,12 +185,13 @@ namespace Cachou
 
         public void HideScroll()
         {
-            _seekBar.Visibility = ViewStates.Invisible;
+            _seekBar.Visibility = ViewStates.Gone;
         }
 
         public void ShowScroll()
         {
             _seekBar.Visibility = ViewStates.Visible;
+            handleSeekBarDrag(_seekBar);
         }
 
         public void AddEventOnDrag()
@@ -167,24 +210,48 @@ namespace Cachou
 
         public void HideNurse()
         {
-            FindViewById<ImageView>(Resource.Id.choose_nurse).Visibility = ViewStates.Invisible;
+            FindViewById<LinearLayout>(Resource.Id.choose_nurse).Visibility = ViewStates.Gone;
         }
 
         public void ShowNurse()
         {
-            var imageview = FindViewById<ImageView>(Resource.Id.choose_nurse);
-            imageview.BringToFront();
-            imageview.Visibility = ViewStates.Visible;
-=======
-        static class webMessageSender
+            var layout = FindViewById<LinearLayout>(Resource.Id.choose_nurse);
+            layout.BringToFront();
+            layout.Visibility = ViewStates.Visible;
+        }
+
+        public void ShowColors()
         {
-            public static void postServer(string message)
+            var layout = FindViewById<LinearLayout>(Resource.Id.coloring_nurse);
+            layout.BringToFront();
+            layout.Visibility = ViewStates.Visible;
+        }
+
+        public void HideColors()
+        {
+            FindViewById<LinearLayout>(Resource.Id.coloring_nurse).Visibility = ViewStates.Gone;
+        }
+
+        public void sendAudioFile()
+        {
+            //Resource.Raw.amy
+            var stream = Assets.Open("amy.wav");
+            WebAPI.WebAPI.SendAudioFile(convertAudioStreamtoByteArray(stream));
+        }
+
+        private byte[] convertAudioStreamtoByteArray(Stream stream)
+        {
+            using (MemoryStream ms = new MemoryStream())
             {
-                DateTime localDate = DateTime.Now;
-                string culture = "en-GB";
-                WebAPI.WebAPI.SendChildAction(localDate.ToString(culture), message);
-            } 
->>>>>>> cca75eff2666c2a5b23bc8177418d7039e1f4e29
+                stream.CopyTo(ms);
+                return ms.ToArray();
+            }
+            return null;
+        }
+
+        public void SetNurse(int nurseId)
+        {
+            FindViewById<ImageView>(Resource.Id.nurse_layout).SetImageResource(nurseId);
         }
     }
 }
